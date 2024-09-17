@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://cnspvostwi58v"]
+
+[ext_resource type="Texture2D" uid="uid://b5476e7xedbci" path="res://assets/Tilesets/Egg item.png" id="1_sqsti"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_2t2f6"]
+
+[node name="Egg" type="Area2D"]
+
+[node name="Egg" type="Sprite2D" parent="."]
+texture = ExtResource("1_sqsti")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_2t2f6")
