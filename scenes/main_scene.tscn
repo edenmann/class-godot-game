@@ -108,7 +108,6 @@ texture = ExtResource("2_a0g4p")
 position = Vector2(196, 43)
 
 [node name="Camera2D" type="Camera2D" parent="MainCharacter"]
-position_smoothing_enabled = true
 position_smoothing_speed = 20.0
 
 [node name="Control" type="Control" parent="MainCharacter/Camera2D"]

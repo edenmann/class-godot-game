@@ -20,9 +20,10 @@ func _physics_process(delta: float) -> void:
 	if direction:
 		#velocity.x = direction * SPEED
 		velocity.x += direction * acceleration * 1.2
-		#if velocity.x > 350 or velocity.x < -350:
-		#	velocity.x = 340
 	else:
 		velocity.x = move_toward(velocity.x, 0, SPEED)
+
+	if velocity.x > 350 or velocity.x < -350:
+		velocity.x = 350 * direction
 
 	move_and_slide()
